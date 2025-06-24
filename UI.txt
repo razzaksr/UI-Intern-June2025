@@ -1,0 +1,104 @@
+Web application:
+	solution >> via internet
+	
+	static	>> content wont change often
+		eg: Wikipedia, portfolio, ....
+	dynamic	>> content will change based on time, user, location,...
+		eg: swiggy, gmail, irctc, amazon
+
+
+
+static web application:
+	html, css, bootstrap, java script
+dynamic web application:
+	java, java script, python, php, dotnet
+
+agenda:
+UI Design/ static web
+React JS>> java script based library for UI
+Firebase/ Fire store, auth>> dynamic web
+
+
+logics:
+presentation		>> UI/ front end
+business			>> coding/ backend/ api
+data				>> storage logic
+
+
+client/ server: http>> 80
+request		>> 
+header,>> authorization
+data transfer
+parameter	>> data will appear at url
+body			>> data will be passed via http body
+
+https://www.amazon.in/s?k=keyboards&crid=226DI1T3DQTUL&sprefix=keyboard%2Caps%2C435&ref=nb_sb_noss_2
+
+response		>> api to client
+body/data:
+	data with UI/ data without UI
+status code:
+	200		>> success with data
+	404		>> not found
+	500		>> internal server error
+	201		>> success without data
+	401		>> unauthorized
+	400		>> bad request
+	403		>> forbidden
+
+
+Static web application:
+scripting
+editor:
+	vs code
+
+
+web site/ web app:
+	web pages>> html
+		components>> grouping(div/section/header/footer)
+
+
+file.html:
+components/ elements:
+text:	p, headers>> h1,h2...h6
+media: img, video, audio
+format: font, div, section
+list:	ul, ol
+form: input(text, check,radio),select, output, button, form, ....
+navigation: a, nav
+table: table, tr, th, thead, tbody
+
+run:
+extension:	live server, intellisense for CSS, HTML CSS support
+
+
+self closing elements:
+br
+img
+
+
+
+
+Free Media:
+https://www.pexels.com
+
+
+Task:
+home.html
+texts navigate to video library and ebook library
+medialibrary.html >> with images and play video while click on the images
+	wedding
+	house warming
+	birthday
+ebook.html>> with images and download respective ebook while click on the respective cover page image
+	health
+	finance
+	comic
+	scifi
+
+for free ebooks CDN:
+https://www.gutenberg.org/ebooks/
+
+
+
+	
