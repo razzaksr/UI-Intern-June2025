@@ -101,4 +101,59 @@ https://www.gutenberg.org/ebooks/
 
 
 
-	
+iframe, nav, table, font
+
+font: element
+attributes	>> face, size, color
+
+table>>
+	thead
+		tr
+			th
+	tbody
+		tr
+			td
+
+semester report
+rollno, name, sub1, ..... sub6, gpa, cgpa
+
+
+nav >> navigation element where "a" element plays vital role
+
+iframe >> includes one page into another
+height, width, src
+
+form components:
+data transfer/interaction with backend api
+customer send their data to the backend api via form components:
+eg:
+login
+order placement
+swiggy placement
+
+form>> label, textbox, password, check box, radio button, button, select(drop down), text area
+
+form>> attrbutes>> 
+onsubmit(an specific user action before sending data to the backend) , 
+action>>>(backend api)
+
+button>> submit>> by default sending data to backend mentioned in action attribute
+
+button>>
+submit
+reset
+button
+
+input/ button
+
+
+form >> method >> get(default visible in url), post
+
+get
+http://127.0.0.1:5500/formcomponents.html?fullname=Razak+Mohamed+S&aadhaar=987657890&pan=ABCDE1122W&address=jhvhjvk%0D%0Alnl&savings=on&otp=jhgfhbjkml%3B%2C&profession=on&nri=India
+
+post
+http://127.0.0.1:5500/formcomponents.html
+
+task:
+design internship enrollment google form

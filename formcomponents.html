@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Components</title>
+</head>
+<body>
+    <center><p>MyBank KYC</p></center>
+    <form action="" method="post">
+        <label>Full Name</label>
+        <input type="text" name="fullname" placeholder="entre the fullname"/>
+        <label>Aadhaar</label>
+        <input type="number" name="aadhaar" placeholder="entre the addahr number"/>
+        <label>PAN Number</label>
+        <input type="text" name="pan" placeholder="entre the pan card"/>
+        <label>Address</label>
+        <textarea name="address"></textarea>
+        <label>Association with US</label>
+        <input type="checkbox" name="savings"/>Savings Account
+        <input type="checkbox" name="credit"/>Credit card
+        <input type="checkbox" name="loan"/>Loan
+        <label>Entre the OTP</label>
+        <input type="password" name="otp">
+        <label>Profession</label>
+        <input type="radio" name="profession"/>Business
+        <input type="radio" name="profession"/>Salaried
+        <input type="radio" name="profession"/>Self Employed
+        <input type="radio" name="profession"/>Home maker
+        <label>Are you NRI</label>
+        <select name="nri">
+            <option>Select Resisence type</option>
+            <option>India</option><option>NRI</option>
+        </select>
+        <input type="submit" value="Open Account"/>
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
