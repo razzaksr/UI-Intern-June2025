@@ -157,3 +157,30 @@ http://127.0.0.1:5500/formcomponents.html
 
 task:
 design internship enrollment google form
+
+
+
+Cascading Style Sheet:
+format
+colors
+backgrounds
+margins
+borders
+shadows
+alignments: horizontal, vertical
+.
+.
+
+inline		>> element style attribute
+internal		>> writing styles in head section of the 						document
+external		>> write it exclusive css file and import it in 					head section
+
+
+
+internal/ external
+filters:
+element name
+id
+class
+
+

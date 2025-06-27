@@ -4,36 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Components</title>
+    <style>
+        #sub-buttons{
+            padding: 5px 5px 5px 5px;
+            border-radius: 10px;
+            color: green;
+            background-color: black;
+        }
+        #sub-buttons:hover{
+            cursor: pointer;
+            color: black;
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
     <center><p>MyBank KYC</p></center>
     <form action="" method="post">
-        <label>Full Name</label>
-        <input type="text" name="fullname" placeholder="entre the fullname"/>
-        <label>Aadhaar</label>
-        <input type="number" name="aadhaar" placeholder="entre the addahr number"/>
-        <label>PAN Number</label>
-        <input type="text" name="pan" placeholder="entre the pan card"/>
-        <label>Address</label>
-        <textarea name="address"></textarea>
-        <label>Association with US</label>
-        <input type="checkbox" name="savings"/>Savings Account
-        <input type="checkbox" name="credit"/>Credit card
-        <input type="checkbox" name="loan"/>Loan
-        <label>Entre the OTP</label>
-        <input type="password" name="otp">
-        <label>Profession</label>
-        <input type="radio" name="profession"/>Business
-        <input type="radio" name="profession"/>Salaried
-        <input type="radio" name="profession"/>Self Employed
-        <input type="radio" name="profession"/>Home maker
-        <label>Are you NRI</label>
-        <select name="nri">
-            <option>Select Resisence type</option>
-            <option>India</option><option>NRI</option>
-        </select>
-        <input type="submit" value="Open Account"/>
-        <input type="reset" value="Cancel">
+        <table cellspacing="10px">
+            <tbody>
+                <tr>
+                    <td><label>Full Name</label></td>
+                    <td><input type="text" name="fullname" placeholder="entre the fullname"/></td>
+                </tr>
+                <tr>
+                    <td><label>Aadhaar</label></td>
+                    <td><input type="number" name="aadhaar" placeholder="entre the addahr number"/></td>
+                </tr>
+                <tr>
+                    <td><label>PAN Number</label></td>
+                    <td><input type="text" name="pan" placeholder="entre the pan card"/></td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><textarea name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Association with US</label></td>
+                    <td><input type="checkbox" name="savings"/>Savings Account</td>
+                    <td><input type="checkbox" name="credit"/>Credit card</td>
+                    <td><input type="checkbox" name="loan"/>Loan</td>
+                </tr>
+                <tr>
+                    <td><label>Entre the OTP</label></td>
+                    <td><input type="password" name="otp"></td>
+                </tr>
+                <tr>
+                    <td><label>Profession</label></td>
+                    <td><input type="radio" name="profession"/>Business</td>
+                    <td><input type="radio" name="profession"/>Salaried</td>
+                    <td><input type="radio" name="profession"/>Self Employed</td>
+                    <td><input type="radio" name="profession"/>Home maker</td>
+                </tr>
+                <tr>
+                    <td><label>Are you NRI</label></td>
+                    <td>
+                        <select name="nri">
+                            <option>Select Resisence type</option>
+                            <option>India</option><option>NRI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" id="sub-buttons" value="Open Account"/></td>
+                    <td><input type="reset" id="sub-buttons" value="Cancel"></td>
+                </tr>
+            </tbody>
+        </table>
     </form>
 </body>
 </html>

@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table element</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        table{
+            background: fixed center no-repeat url('https://images.pexels.com/photos/30052108/pexels-photo-30052108.jpeg');
+            color: white;
+        }
+        td:hover{
+            font-size: 30px;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    <font color="white">
     <!-- <table border="4px" cellpadding = "14px" cellspacing="24px" bgcolor="cyan"> -->
-    <table border="4px" cellpadding = "14px" cellspacing="24px" background="https://images.pexels.com/photos/30052108/pexels-photo-30052108.jpeg">
+    <table border="4px" cellpadding = "14px" cellspacing="24px">
         <thead>
             <tr>
                 <th>Order ID</th>
@@ -28,6 +43,5 @@
             </tr>
         </tbody>
     </table>
-    </font>
 </body>
 </html>
