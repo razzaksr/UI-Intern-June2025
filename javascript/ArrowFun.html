@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <script>
+        const remove = () =>{
+            var list = document.getElementById("skills")
+            var position = prompt("tell us which to be removed ")
+            list.removeChild(list.children[position])
+        }
+        const insert = () =>{
+            var list = document.getElementById("skills")
+            var skill = prompt("tell us skills to be added ")
+            var newelem = document.createElement("li")
+            newelem.innerHTML = skill
+            list.appendChild(newelem)
+        }
+        const replace = () => {
+            var list = document.getElementById("skills")
+            var position = prompt("tell us which to be replace ")
+            // list.removeChild(list.children[position])
+            var exists = list.children[position]
+            if(exists){
+                const re = prompt("replaceble skill ")
+                exists.innerHTML = re
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="skills" onclick="remove()" onmouseenter="insert()">
+       <li>MERN</li> 
+       <li>Spring Boot</li>
+       <li>DJango</li>
+       <li>Flask</li>
+    </ul>
+    <button onclick="replace()">update</button>
+</body>
+</html>

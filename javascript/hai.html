@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Java script</title>
+    <script>
+        function balaji(){
+            var elem = document.getElementsByTagName("h1")[0]
+            elem.innerHTML = "hey there i have changed content"
+            elem.style.color = 'blue'
+            elem.style.backgroundColor='red'
+        }
+        function vijay(){
+            var elem = document.getElementsByTagName("h1")[0]
+            elem.innerHTML = "DOM Demo"
+            elem.style.color = 'red'
+            elem.style.backgroundColor='blue'
+        }
+    </script>
+</head>
+<body>
+    <p onmouseenter="alert('para about to change')"
+    onmouseleave="alert('para return to default')"
+    >
+        hello</p>
+    <script>
+        // alert("welcome to java script")
+        // console.log('my first java script')
+    </script>
+    <noscript>
+        java script is not working
+    </noscript>
+    <h1 onclick="balaji()" ondblclick="vijay()">
+        DOM Demo</h1>
+    <h1>Simple HTML</h1>
+</body>
+</html>

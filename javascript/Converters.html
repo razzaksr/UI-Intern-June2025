@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converters|user inputs</title>
+    <script src="./converts.js" defer></script>
+    <script>
+        function dollarToRupees(){
+            const dollar = prompt("enter the dollar ")
+            alert(dollar*85.69)
+        }
+        var cm = document.getElementById("centimeter")
+        cm.addEventListener('click',function(){
+            alert(cm.value/100)
+        })
+        function centiToFoot(){
+            const cm = prompt("enter the centimeter ")
+            alert(cm/30.48)
+        }
+    </script>
+</head>
+<body>
+    <button onclick="dollarToRupees()">D2R</button>
+    <button onclick="centiToMeter()">C2M</button>
+    <button onclick="centiToFoot()">C2F</button>
+    <br/>
+    <input type="text" name="centimeter" id="centimeter" placeholder="centimeter"/>
+    <input type="text" name="feet" id="feet" placeholder="feet"/>
+</body>
+</html>

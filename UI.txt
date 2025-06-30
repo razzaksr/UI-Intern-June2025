@@ -184,3 +184,57 @@ id
 class
 
 
+Java script:
+client		>> depends on html(page)
+objective: event managements: validation, button actions, CRUD
+
+server		>> standalone using node js
+objective: full stack web application, data analytics
+	>> front end frameworks: react js(library), angular, vue, 
+	>> back end frameworks: express
+
+Client side java script:
+	inline
+	internal
+	external (file.js)
+
+events: Document Object Model
+	mouse events
+	keyboard events
+	button events
+	window events
+
+<noscript>
+
+</noscript>
+
+
+data:
+variables: var, const, let
+eg: var myName = "Razak Mohamed S"
+	const myExperience = 12.6
+	let mySkillset = 29
+data types: String, Number, Object(JSON, Array), Boolean, Date
+
+conversion:
+	String to otherType:	Number(String)
+	
+operations:
+	Create Read Update Delete
+	functions:
+	
+input: prompt
+output:
+alert	>> page
+console.log() >> console
+
+
+function fun_name(param){
+// function body
+}
+
+new JS:
+
+const/ var/ let = (param) => {
+// function body
+}
