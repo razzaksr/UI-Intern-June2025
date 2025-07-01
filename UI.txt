@@ -238,3 +238,10 @@ new JS:
 const/ var/ let = (param) => {
 // function body
 }
+
+
+Java Script based CRUD operation
+
+Task: 
+View Games
+Add new game
