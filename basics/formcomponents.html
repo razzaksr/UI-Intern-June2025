@@ -17,6 +17,7 @@
             background-color: green;
         }
     </style>
+    <script src="../javascript/validation.js"></script>
 </head>
 <body>
     <center><p>MyBank KYC</p></center>
@@ -25,44 +26,63 @@
             <tbody>
                 <tr>
                     <td><label>Full Name</label></td>
-                    <td><input type="text" name="fullname" placeholder="entre the fullname"/></td>
+                    <td>
+                        <input onblur="validateName()" type="text" id="fullname" name="fullname" placeholder="entre the fullname"/>
+                        <span id="err-fullname"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Aadhaar</label></td>
-                    <td><input type="number" name="aadhaar" placeholder="entre the addahr number"/></td>
+                    <td>
+                        <input type="number" onblur="validateAadhaar()" id="aadhaar" name="aadhaar" placeholder="entre the addahr number"/>
+                        <span id="err-aadhaar"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td><label>PAN Number</label></td>
-                    <td><input type="text" name="pan" placeholder="entre the pan card"/></td>
+                    <td>
+                        <input type="text" onblur="validatePan()" id="pan" name="pan" placeholder="entre the pan card"/>
+                        <span id="err-pan"></span>
+                    </td>
                 </tr>
                 <tr>
-                    <td><label>Address</label></td>
-                    <td><textarea name="address"></textarea></td>
+                    <td><label>Email address</label></td>
+                    <!-- <td><textarea name="address"></textarea></td> -->
+                    <td>
+                        <input type="email" onblur="validateEmail()" id="email" name="email" placeholder="entre the email ">
+                        <span id="err-email"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Association with US</label></td>
-                    <td><input type="checkbox" name="savings"/>Savings Account</td>
-                    <td><input type="checkbox" name="credit"/>Credit card</td>
-                    <td><input type="checkbox" name="loan"/>Loan</td>
+                    <td><input type="checkbox" onchange="validateCheckBox('association')" name="association" value="savings"/>Savings Account</td>
+                    <td><input type="checkbox" onchange="validateCheckBox('association')" name="association" value="credit"/>Credit card</td>
+                    <td><input type="checkbox" onchange="validateCheckBox('association')" name="association" value="loan"/>Loan</td>
+                    <td><span id="err-association"></span></td>
                 </tr>
                 <tr>
-                    <td><label>Entre the OTP</label></td>
-                    <td><input type="password" name="otp"></td>
+                    <td><label>Password</label></td>
+                    <td>
+                        <input type="password" onblur="validatePassword()" id="password" name="password" placeholder="entre the password">
+                        <span id="err-password"></span>
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Profession</label></td>
-                    <td><input type="radio" name="profession"/>Business</td>
-                    <td><input type="radio" name="profession"/>Salaried</td>
-                    <td><input type="radio" name="profession"/>Self Employed</td>
-                    <td><input type="radio" name="profession"/>Home maker</td>
+                    <td><input type="radio" onchange="validateRadioBox('profession')" name="profession" value="business"/>Business</td>
+                    <td><input type="radio" onchange="validateRadioBox('profession')" name="profession" value="salaried"/>Salaried</td>
+                    <td><input type="radio" onchange="validateRadioBox('profession')" name="profession" value="self-employed"/>Self Employed</td>
+                    <td><input type="radio" onchange="validateRadioBox('profession')" name="profession" value="home-maker"/>Home maker</td>
+                    <td><span id="err-profession"></span></td>
                 </tr>
                 <tr>
                     <td><label>Are you NRI</label></td>
                     <td>
-                        <select name="nri">
+                        <select name="nri" id="nri" onchange="validateResidence()">
                             <option>Select Resisence type</option>
                             <option>India</option><option>NRI</option>
                         </select>
+                        <span id="err-nri"></span>
                     </td>
                 </tr>
                 <tr>

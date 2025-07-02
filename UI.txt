@@ -245,3 +245,47 @@ Java Script based CRUD operation
 Task: 
 View Games
 Add new game
+
+
+Form Validation:
+	data validation>> using DOM
+	
+regular expression:
+pattern:
+	[A-Z]		>> only alphabets capital
+	[a-z]
+	[0-9]		
+	*		>> 0 or more occurrence
+	+		>> 1 or more occurrence
+	^		>> start
+	$		>> end
+	{}		>> min, max
+
+Storage logics:
+Array/list: temporary memory
+methods:
+push	>> add values into array
+pop		>> removes recently/last added value
+filter		>> shortlist/ delete
+map		>> iterate/ loop
+
+1. array of primitive value(String, Number)
+2. array of Java Script Object Notation(JSON)
+[
+	{
+		"key": value
+	},
+	{
+		"key": value
+	},
+]
+
+
+perm m/y:
+Local Storage
+Session Storage
+
+
+
+Bootstrap
+
