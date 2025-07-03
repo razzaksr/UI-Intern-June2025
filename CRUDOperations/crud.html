@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student CRUD</title>
+</head>
+<body>
+  <h2>Student Form</h2>
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="text" id="roll" placeholder="Roll No" required />
+    <input type="text" id="dept" placeholder="Department" required />
+    <input type="hidden" id="index" />
+    <button type="submit">Save</button>
+  </form>
+
+  <h3>Student List</h3>
+
+  <button onclick="clearAllStudents()">Remove All</button>
+
+  <table border="1">
+    <thead>
+      <tr><th>Name</th><th>Roll</th><th>Dept</th><th>Actions</th></tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+  </table>
+
+  <script src="crud.js"></script>
+</body>
+</html>
