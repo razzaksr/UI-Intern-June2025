@@ -55,10 +55,16 @@ function editStudent(i) {
 }
 
 function deleteStudent(i) {
-  students.splice(i, 2);
+  students = students.filter((val,ind)=>{
+    return ind!=i
+  })
   console.log("After Deletion:", students);
   localStorage.setItem("students", JSON.stringify(students));
   renderTable();
 }
 
-renderTable();
+window.onload=function () {
+  if(!sessionStorage.getItem("logged"))
+    location.assign("./login.html")
+  renderTable()
+}

@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frames</title>
+    <script>
+        const viewCompiler = () => {
+            document.getElementById('view').setAttribute('src','https://zealoustechcorp.com/compiler')
+        }
+        const viewCrescent = () => {
+            document.getElementById('view').setAttribute('src','https://crescentedtech.netlify.app')
+        }
+    </script>
 </head>
-<body bgcolor="black">
+<body>
     <nav>
-        <a href="https://www.zealoustechcorp.com/compiler">To practice</a>
+        <button onclick="viewCompiler()">compiler</button>
+        <button onclick="viewCrescent()">crescent</button>
     </nav>
-    <iframe src="./first.html" height="80%" width="50%"></iframe>
-    <iframe src="https://www.zealoustechcorp.com/" height="80%" width="50%"></iframe>
+    <iframe id="view" src="" style="height: 80vh;width: 100%;"></iframe>
 </body>
 </html>

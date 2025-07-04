@@ -282,8 +282,15 @@ map		>> iterate/ loop
 
 
 perm m/y:
+setItem
+getItem
+removeItem
+
+
 Local Storage
-Session Storage
+Session Storage>> login, logout
+
+iframe
 
 
 
