@@ -294,5 +294,28 @@ iframe
 
 
 
-Bootstrap
+Bootstrap: in built style's class, css framework
+getbootstrap.com
 
+mobile first approach
+
+Setting Up:
+1. Content Delivery Network: includes certain URL in our HTML's head section
+2. Download bootstrap .css
+
+icons
+display>> headers
+colors: 
+primary, secondary, dark, light, info, warning, danger, success
+bg
+alignments: horizontal(12 columns), verticals
+break points: xs, sm, md, lg, xl
+cards
+carousal: indicator, inner/body, control(prev/next)
+forms
+navigations
+tables
+flex
+padding
+shadow
+margins
