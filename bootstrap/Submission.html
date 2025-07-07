@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form Submission</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="../javascript/validation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-success">
+            <p class="display-4 text-center">Profile</p>
+        </div>
+        <div class="row justify-content-center">
+            <form action="" class="col-lg-8 col-12 shadow-lg p-3 rounded-3">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-12">
+                        <label>Full Name</label>
+                        <input class="form-control" onblur="validateName()" type="text" id="fullname" name="fullname" placeholder="entre the fullname"/>
+                        <span id="err-fullname"></span>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-2 mt-lg-0">
+                        <label>Password</label>
+                        <input class="form-control" type="password" onblur="validatePassword()" id="password" name="password" placeholder="entre the password">
+                        <span id="err-password"></span>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-6 col-12">
+                        <label>Aadhaar</label>
+                        <input class="form-control" type="number" onblur="validateAadhaar()" id="aadhaar" name="aadhaar" placeholder="entre the addahr number"/>
+                        <span id="err-aadhaar"></span>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-2 mt-lg-0">
+                        <label>PAN</label>
+                        <input class="form-control" type="text" onblur="validatePan()" id="pan" name="pan" placeholder="entre the pan card"/>
+                        <span id="err-pan"></span>
+                    </div>
+                </div>
+                <div class="form group">
+                    <label>Email address</label>
+                    <input class="form-control" type="email" onblur="validateEmail()" id="email" name="email" placeholder="entre the email ">
+                    <span id="err-email"></span>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">Association with US</label>
+                    <input class="form-check-input" type="checkbox" onchange="validateCheckBox('association')" name="association" value="savings"/>Savings Account
+                    <input class="form-check-input" type="checkbox" onchange="validateCheckBox('association')" name="association" value="credit"/>Credit card
+                    <input class="form-check-input" type="checkbox" onchange="validateCheckBox('association')" name="association" value="loan"/>Loan
+                    <span id="err-association"></span>
+                </div>
+                <div class="form-check-inline">
+                    <label class="form-check-label">Profession</label>
+                    <input class="form-check-input" type="radio" onchange="validateRadioBox('profession')" name="profession" value="business"/>Business
+                    <input class="form-check-input" type="radio" onchange="validateRadioBox('profession')" name="profession" value="salaried"/>Salaried
+                    <input class="form-check-input" type="radio" onchange="validateRadioBox('profession')" name="profession" value="self-employed"/>Self Employed
+                    <input class="form-check-input" type="radio" onchange="validateRadioBox('profession')" name="profession" value="home-maker"/>Home maker
+                    <span id="err-profession"></span>
+                </div>
+                <div class="form group">
+                    <label>Are you NRI</label>
+                    <select class="form-select" name="nri" id="nri" onchange="validateResidence()">
+                        <option>Select Resisence type</option>
+                        <option>India</option><option>NRI</option>
+                    </select>
+                    <span id="err-nri"></span>
+                </div>
+                <div class="row justify-content-evenly mt-3">
+                    <button class="col-1 bi bi-building-fill-add btn btn-outline-primary"></button>
+                    <button class="col-1 bi bi-x-diamond-fill btn btn-outline-danger"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -319,3 +319,6 @@ flex
 padding
 shadow
 margins
+
+single page application:
+navigation
